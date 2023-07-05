@@ -1,9 +1,9 @@
-FROM node:16.16.0-slim
+FROM node:19-slim
 
-RUN apt install bash
+# RUN apt install bash
 
 WORKDIR /home/node/app
 
-USER node
+# USER node
 
-CMD [".docker/start.sh"]
+CMD ["tail", "-f", "/dev/null"]
